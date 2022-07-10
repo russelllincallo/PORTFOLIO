@@ -1,0 +1,12 @@
+.flex {
+    display: flex;
+    &-js-sb {
+        justify-content: space-between;
+    }
+    &__logo {
+        img {
+            width: rem(50);
+            height: 32px;
+        }
+    }
+}

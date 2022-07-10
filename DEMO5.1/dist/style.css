@@ -21,4 +21,27 @@ a {
 
 li {
   list-style: none;
+}
+
+@font-face {
+  font-family: Aquire;
+  src: url(/font/Aquire-BW0ox.otf);
+}
+@font-face {
+  font-family: AquireLight;
+  src: url(/font/AquireLight-YzE0o.otf);
+}
+@font-face {
+  font-family: AquireBold;
+  src: url(/font/AquireBold-8Ma60.otf);
+}
+.flex {
+  display: flex;
+}
+.flex-js-sb {
+  justify-content: space-between;
+}
+.flex__logo img {
+  width: rem(50);
+  height: 32px;
 }/*# sourceMappingURL=style.css.map */
