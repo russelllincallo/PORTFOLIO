@@ -1,0 +1,29 @@
+//Color
+$white: hsl(0, 0%, 96%);
+$gray: hsla(0, 0%, 96%, 0.070);
+$warmred: hsl(0, 84%, 64%);
+$semidarkblue: hsl(210, 32%, 28%);
+$black: hsl(0, 0%, 7%);
+//Font
+@font-face {
+    font-family: Aquire;
+    src: url(/font/Aquire-BW0ox.otf);
+}
+
+@font-face {
+    font-family: AquireLight;
+    src: url(/font/AquireLight-YzE0o.otf);
+}
+
+@font-face {
+    font-family: AquireBold;
+    src: url(/font/AquireBold-8Ma60.otf);
+}
+
+// Media Queries
+$Umedium: "min-width: 40em";
+$Ularge: "min-width: 64em";
+$Uxlarge: "min-width: 87.5em";
+$Dsmall: "max-width: 39.99375em";
+$Dmedium: "max-width: 63.99375em";
+$Dlarge: "max-width: 87.49375em";

@@ -1,0 +1,4 @@
+@use 'variables' as v;
+@mixin mq-mobile {
+    @media (v.$Dmedium) {}
+}

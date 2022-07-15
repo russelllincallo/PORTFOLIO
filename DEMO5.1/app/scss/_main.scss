@@ -1,0 +1,25 @@
+@use'mixins' as m;
+@use 'variables' as v;
+.main {
+    margin-left: rem(250);
+    margin-top: rem(180);
+    @media (v.$Dmedium) {
+        margin-left: rem(100);
+    }
+    &__text {
+        width: rem(500);
+        h1 {
+            font-family: AquireBold;
+            font-size: rem(50);
+            color: hsl(0, 0%, 96%);
+            @include m.mq-mobile;
+        }
+        p {
+            width: rem(500);
+            color: hsla(0, 0%, 96%, 0.50);
+        }
+    }
+    &__image {
+        img {}
+    }
+}

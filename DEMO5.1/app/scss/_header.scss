@@ -1,0 +1,70 @@
+.header {
+    height: rem(80);
+    margin: rem(50);
+    border: 2px solid hsla(0, 0%, 96%, 0.070);
+    position: relative;
+    img {
+        width: rem(60);
+        height: rem(60);
+        margin: rem(9);
+    }
+    &__menu {
+        transition: color .3s ease-in-out;
+        i {
+            margin-right: rem(30);
+        }
+        &:hover {
+            color: hsl(0, 84%, 64%);
+        }
+    }
+    &__links {
+        position: absolute;
+        left: rem(200);
+        a {
+            transition: color .3s ease-in-out;
+            &:not(:nth-child(4)) {
+                margin-right: rem(50);
+            }
+            &:hover {
+                color: hsl(0, 84%, 64%);
+            }
+        }
+    }
+    &__contact {
+        margin-right: rem(30);
+        a {
+            margin-left: rem(15);
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: hsl(0, 84%, 64%);
+            }
+        }
+        button {
+            transition: .3s ease-in-out;
+            &:hover {
+                background: hsl(0, 84%, 64%);
+                color: #fff;
+            }
+        }
+    }
+    &__left {
+        width: rem(80);
+        height: rem(850);
+        padding-bottom: rem(50);
+        border: 2px solid hsla(0, 0%, 96%, 0.070);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        i {
+            font-size: rem(25);
+            color: #fff;
+            transition: color .3s ease-in-out;
+            &:not(:last-child) {
+                margin-bottom: rem(50);
+            }
+            &:hover {
+                color: hsl(0, 84%, 64%);
+            }
+        }
+    }
+}

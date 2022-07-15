@@ -1,0 +1,72 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    font-size: v.$font-med;
+    color: v.$GrayishBlue;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// FLEXBOX
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+//BUTTONS
+button,
+.button {
+    padding: 1rem 1.875rem;
+    background: linear-gradient(to right, v.$LimeGreen, v.$BrightCyan);
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    color: v.$White;
+}
+
+//VISIBILITY
+.hide-for-mobile {
+    //Hide for mobile & tablet
+    @include m.breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    //Hide for desktop
+    @include m.breakpoint-up(xlarge) {
+        display: none;
+    }
+}

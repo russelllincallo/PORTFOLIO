@@ -1,20 +1,5 @@
-//RESET
-@import "1reset";
-//VARIABLES
-@import "2variables";
-//COLORS
-@import "3colors";
-//FONTS
-@import "4fonts";
-//TYPOGRAPHY
-@import "5typography";
-//IMAGE
-@import "6image";
-//BUTTONS
-@import "7buttons";
-//HEADER
-@import "8header";
-//MAIN1
-@import "9main1";
-//Function
-@import "functions";
+@import "variables";
+@import "function";
+@import "globals";
+@import "header";
+@import "main";
